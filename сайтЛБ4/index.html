@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        FichePizza
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hav-menu">
+            <div class="lhead">
+                <div id="logo">
+                    <a href="/">
+                        <img src="/icons/logoimage.png" width="160" height="80">
+                    </a>
+                </div>
+                <div id="geo">
+                    <a href="/">
+                        <img src="/icons/maps.jpg">
+                        <span class="text-store">вул.Кіото 19</span>
+                    </a>
+                </div>
+                <div class="header-bg">
+                    <div class="container2">
+                        <nav id="megamenu" class="navbar">
+                            <ul class="navbar-nav">
+                                <li class="dropdown"></li>
+                                <li>
+                                    <a href="/pages/choicecity.html">Про нас</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/choicecity.html">Доставка та оплата</a>
+                                </li>
+                                <li>
+                                    <a href="/">Контакти <div class="hide-arrow">&bigtriangleup;</div></a>
+                                        <ul class="submenu">
+                                            <li><a href="tel:380992024201">Телефон</a></li>
+                                            <li><a href="mailto:info:d.andryeyev_fit_2_22_b_d@knute.edu.ua">Email</a></li>
+                                        </ul>
+                                </li>
+                                <li class="dropdown"></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="rhead">
+                <div class="item-r-head">
+                    <span class="text-r-title" id="b">Доставка</span>
+                    <span>Від 300грн</span>
+                    <span class="dropdown"></span><br>
+                    <span class="desc-r-title-green">БЕЗКОШТОВНО</span>
+                    <span class="dropdown"></span>
+                </div>
+                <div class="tel-desc bottom-info">
+                    <span class="text-r-title" id="b">Безкоштовний дзвінок</span><br>
+                    <a href="tel:0992024201" class="desc-r-title-green">0992024201</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-menu-head">
+        <div class="container">
+            <div id="top-links" class="nav">
+                <div class="list-inline-menu">
+                    <div class="menu-section">
+                        <nav class="item-menu-head">
+                            <img src="/icons/pizza.png">
+                            <a href="#1">Піца</a>
+                            <span class="dropdown"></span>
+                            <img src="/icons/burger.jpg">
+                            <a href="#2">Бургери</a>
+                            <span class="dropdown"></span>
+                            <img src="/icons/salad.png">
+                            <a href="#3">Салати</a>
+                            <span class="dropdown"></span>
+                            <img src="/icons/drink.png">
+                            <a href="#4">Напої</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <header>
+        <div class="overlay-geo" style="display: block;"></div>
+        <div class="modal-geo show-modal-geo">
+            <div class="inside-modal-geo">
+                <span class="title-inside-modal-geo">Оберіть ваше місто</span>
+                <div class="flex-misto">
+                    <div class="item-misto">
+                        <a href="/korosten/">Київ</a>
+                    </div>
+                    <div class="item-misto">
+                        <a href="/berdychev/">Бердичів</a>
+                    </div>
+                    <div class="item-misto">
+                        <a href="/zvyagel/">Звягель</a>
+                    </div>
+                    <div class="item-misto">
+                        <a href="/fastiv/">Фастів</a>
+                    </div>
+                    <div class="item-misto">
+                        <a href="/sofiivska-borschagivka/">Софіївська Борщагівка</a>
+                    </div>
+                    <div class="item-misto">
+                        <a href="/vyshneve/">Вишневе <span>(Святопетрівське, Крюківщина)</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <div class="section-after-menu">
+        <div class="cart-wish-btn">
+            <div class="item-acc-wish">
+                <a href="/">
+                    <span class="icon-head-aw">
+                        <img id="hurt-img" src="/icons/hurt.png" alt="hurt">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="cart-section">
+            <div class="btn-group-btn-block">
+                <div id="cart" class="btn-group btn-block">
+                    <button type="button" data-loading-text="Завантаження..." class="btn btn-block btn-lg dropdown-toggle bthHead "> 
+                        <span id="cart-total">
+                            <span class="text-tovar-cart">
+                                <span>0</span>&nbsp;продуктів</span> 
+                                <span class="sum-cart">0 грн</span>
+                        </span>
+                        <span class="btn-cart-icon"><img src="/icons/shopping-bag.png" class="imgShopCart"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="owl-item-active">
+        <div class="image-container">
+            <img src="/image/slide1.jpg" alt="Піца з томатами та грибами">
+            <div class="inside-text-slide">
+                <h1 class="title-slide">Збери піцу сам</h1><br>
+                <h4 class="subtitle-slide">Збери піцу сам з доступних інгредієнтів <br>в нашому конструкторі піц</h4><br>
+                <a href="/" class="button-slide">
+                    Збери свою піцу
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section-category-product" id="1">
+        <div class="container3">
+            <div class="flex-row-title">
+                <span class="img-category-icon">
+                    <img src="/icons/pizza.png" class="icon-category">
+                </span>
+                <span class="text-category-name">Піца</span>
+                <span class="desc-categories">Наші піци для справжніх гурманів, де зібрані кращі рецепти. Це саме та страва де сяє креативність наших піцамейкерів.</span>
+            </div>
+                <div class="row">
+                    <div class="item-product-col">
+                    <div class="image">
+                        <img src="/image/margarita-500x500.jpg" alt="margarita">
+                    </div>
+                    <div class="desc-product-container">
+                        <span class="title-product" id="title-product1">Маргарита</span><br>
+                        <span class="desc-product">Томатний соус, велика порція моцарели, томати</span>
+                        <div class="block-btn-price">
+                            <span class="price-text">
+                                <span class="text-from">від 109 грн</span>
+                            </span>
+                            <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item-product-col">
+                    <div class="image">
+                        <img src="/image/pepperoni_sajt-500x500.jpg" alt="margarita">
+                    </div>
+                    <div class="desc-product-container">
+                        <span class="title-product" id="title-product1">Пеппероні</span><br>
+                        <span class="desc-product">Томатний соус, моцарела, ковбаски пеппероні</span>
+                        <div class="block-btn-price">
+                            <span class="price-text">
+                                <span class="text-from">від 129 грн</span>
+                            </span>
+                            <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item-product-col">
+                    <div class="image">
+                        <img src="/image/cypa-500x500.jpg" alt="margarita">
+                    </div>
+                    <div class="desc-product-container">
+                        <span class="title-product" id="title-product1">Сирний ципа</span><br>
+                        <span class="desc-product">Соус Ранч, сирний соус, куряче філе, томати, моцарела</span>
+                        <div class="block-btn-price">
+                            <span class="price-text">
+                                <span class="text-from">від 134 грн</span>
+                            </span>
+                            <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item-product-col">
+                    <div class="image">
+                        <img src="/image/tehassaj-500x500.jpg" alt="margarita">
+                    </div>
+                    <div class="desc-product-container">
+                        <span class="title-product" id="title-product1">Техас</span><br>
+                        <span class="desc-product">Барбекю соус, моцарела, мисливські ковбаски,кукурудза</span>
+                        <div class="block-btn-price">
+                            <span class="price-text">
+                                <span class="text-from" id="text-from1">від 159 грн</span>
+                            </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item-product-col">
+                    <div class="image">
+                        <img src="/image/gavajskajanovaja-500x500.jpg" alt="margarita">
+                    </div>
+                    <div class="desc-product-container">
+                        <span class="title-product" id="title-product1">Гавайська</span><br>
+                        <span class="desc-product">Томатний соус, моцарела, шинка, куряче філе, ананаси,</span>
+                        <div class="block-btn-price">
+                            <span class="price-text">
+                                <span class="text-from">від 134 грн</span>
+                            </span>
+                            <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item-product-col">
+                    <div class="image">
+                        <img src="/image/cipa1-500x500.jpg" alt="margarita">
+                    </div>
+                    <div class="desc-product-container">
+                        <span class="title-product" id="title-product1">Ципа карі</span><br>
+                        <span class="desc-product">Карі соус, моцарела, запечений ципа, печериці,перець</span>
+                        <div class="block-btn-price">
+                            <span class="price-text">
+                                <span class="text-from">від 139 грн</span>
+                            </span>
+                            <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="section-category-product" id="2">
+        <div class="container4">
+            <div class="flex-row-title">
+                <span class="img-category-icon">
+                    <img src="/icons/burger.jpg" class="icon-category">
+                </span>
+                <span class="text-category-name">Бургери</span>
+                <span class="desc-categories">Гарячі, Соковиті, Неймовірно смачні. Власного виробництва котлета чудово поєднується с м’ягкою булочкою бріош.<br>
+                    Для досконалого задоволення краще смакую зі стравами фрі та напоєм.</span>
+            </div>
+            <div class="row">
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/kidbu-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Кідбургер</span><br>
+                    <span class="desc-product">Булочка бріош, котлета зі свинини, сир чеддер, томати</span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 89 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/chizbu-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Чізбургер</span><br>
+                    <span class="desc-product">Булочка бріош, котлета зі свинини, сир чедер, салат айсберг</span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 99 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/barbibu-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">BBQбургер</span><br>
+                    <span class="desc-product">Булочка бріош, котлета зі свинини, сир чеддер, цибулеві кільця</span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 114 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-category-product" id="3">
+        <div class="container5">
+            <div class="flex-row-title">
+                <span class="img-category-icon">
+                    <img src="/icons/pizza.png" class="icon-category">
+                </span>
+                <span class="text-category-name">Салати</span>
+                <span class="desc-categories">Легко. Корисно. Смачно.</span>
+            </div>
+            <div class="row">
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/prosh-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Салат Прошуто</span><br>
+                    <span class="desc-product">Прошуто, мікс салата, рукола, томат, мигдаль, пармезан</span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 129 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/kur-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Салат Цезар з куркою</span><br>
+                    <span class="desc-product">Салат айсберг, куряче філе, томати, сир пармезан, грінки</span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 109 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/cezarkre-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Салат Цезар з креветками</span><br>
+                    <span class="desc-product">Салат айсберг, креветки, томати, сир пармезан, грінки</span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 129 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-category-product" id="4">
+        <div class="container3">
+            <div class="flex-row-title">
+                <span class="img-category-icon">
+                    <img src="/icons/drink.png" class="icon-category">
+                </span>
+                <span class="text-category-name">Напої</span>
+                <span class="desc-categories"></span>
+            </div>
+            <div class="row">
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/sik-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Сік Rich, 0,25л</span><br>
+                    <span class="desc-product"></span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 129 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/kola0.5-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Coca-cola 0,5л</span><br>
+                    <span class="desc-product"></span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 109 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/rich-yablo-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Сік Rich яблоко, 1л</span><br>
+                    <span class="desc-product"></span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 129 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/fanta05-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Fanta апельсин 0,5л</span><br>
+                    <span class="desc-product"></span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 129 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/sprajt05-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Sprite 0,5л</span><br>
+                    <span class="desc-product"></span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 109 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="item-product-col">
+                <div class="image">
+                    <img src="/image/bon-free-500x500.jpg" alt="margarita">
+                </div>
+                <div class="desc-product-container">
+                    <span class="title-product" id="title-product1">Bonaqua негазована 0,5л</span><br>
+                    <span class="desc-product"></span>
+                    <div class="block-btn-price">
+                        <span class="price-text">
+                            <span class="text-from">від 129 грн</span>
+                        </span>
+                        <a href="/"><button class="open-product upProduct">Обрати </button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="features-home">
+        <div class="container6">
+            <div class="flex-features-row">
+                <div class="item-features">
+                    <span class="icon-container">
+                        <img src="/image/1.svg">
+                    </span>
+                    <span class="title-features">Доброзичливе обслуговування</span>
+                    <span class="desc-features">Ми докладемо максимум зусиль для вашого задоволення</span>
+                </div>
+                <div class="item-features">
+                    <span class="icon-container">
+                        <img src="/image/2.svg">
+                    </span>
+                    <span class="title-features">Oригінальні рецепти</span>
+                    <span class="desc-features">Всі наші рецепти є унікальні</span>
+                </div>
+                <div class="item-features">
+                    <span class="icon-container">
+                        <img src="/image/3.svg">
+                    </span>
+                    <span class="title-features">Зручне розташування</span>
+                    <span class="desc-features">Розташовуємось зручно – швидко доставляємо</span>
+                </div>
+                <div class="item-features">
+                    <span class="icon-container">
+                        <img src="/image/3.svg">
+                    </span>
+                    <span class="title-features">Зручне розташування</span>
+                    <span class="desc-features">Розташовуємось зручно – швидко доставляємо</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-home-section">
+        <div class="container7">
+            <div class="flex-form-block-home">
+                <div class="text-left-form-block">
+                    <span class="title-left-form-block">Любиш Бургери чи Піццу?</span>
+                    <span class="subtitle-left-form-block">Вигідні пропозиції?</span>
+                    <span class="desc-left-form-block">Будь першим, хто дізнається про наші новинки та спеціальні пропозиції.</span>
+                </div>
+                <form id="form-home" method="post" class="form-container">
+                    <div class="form-group">
+                        <input type="email" id="your-mail" name="your-mail" placeholder="ваш e-mail" class="form-control" required>
+                    </div>
+                        <button type="submit" class="btn btn-primary">
+                        <span class="check-icon"></span>
+                    Підписатись
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container8">
+            <div class="flex-top-row-footer">
+                <nav class="item-menu-footer">
+                    <a href="#1">
+                        <img src="/icons/pizza.png" class="icon-footer-menu"> Піца
+                    </a>
+                    <a href="#2">
+                        <img src="/icons/burger.jpg" class="icon-footer-menu"> Бургери
+                    </a>
+                    <a href="#3">
+                        <img src="/icons/salad.png" class="icon-footer-menu"> Салати
+                    </a>
+                    <a href="#4">
+                        <img src="/icons/drink.png" class="icon-footer-menu" style="margin-left: 700px;"> Напої
+                    </a>
+                </nav>
+            </div>
+            <div class="flex-row-footer">
+                <div class="item-footer-contact">
+                    <span class="title-block-footer">Контакти</span>
+                    <div class="inside-block-footer">
+                        <div class="item-contact">
+                            <span class="icon-for-row-contact">
+                                <img src="/image/contact1.svg">
+                            </span>
+                            <span class="text-row-contact">Пн. - Нд.: 10:00 - 22:00</span>
+                        </div>
+                        <div class="item-contact">
+                            <span class="icon-for-row-contact">
+                                <img src="/image/contact2.svg" class="icon-for-contact">
+                                </span>
+                                <span class="text-row-contact">Вулиця Кіото, 19, Київ, Київська область</span>
+                            </div>
+                            <div class="item-contact">
+                                <span class="icon-for-row-contact">
+                                <img src="/image/contact3.svg" class="icon-for-contact">
+                                </span>
+                                <a href="tel:0992024201">099 202 42 01</a>
+                            </div>
+                        <div class="item-contact">
+                            <span class="icon-for-row-contact">
+                            <img src="/image/contact4.svg" class="icon-for-contact">
+                            </span>
+                            <a href="mailto:info:d.andryeyev_fit_2_22_b_d@knute.edu.ua">info:d.andryeyev_fit_2_22_b_d@knute.edu.ua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-footer-menu">
+                    <div class="item-inside-menu">
+                        <span class="title-block-footer">Інформація</span>
+                        <nav>
+                            <a href="/">Головна</a>
+                            <a href="/">Про нас</a>
+                            <a href="/">Контакти</a>
+                        </nav>
+                    </div>
+                    <div class="item-inside-menu">
+                        <span class="title-block-footer">Більше</span>
+                        <nav>
+                            <a href="/pages/choicecity.html">Доставка та оплата</a>
+                        </nav>
+                    </div>
+                    <div class="item-inside-menu">
+                        <span class="title-block-footer">Ми приймаємо</span>
+                        <nav>
+                            <div class="payments-block">
+                                <span>
+                                    <img src="/image/master-card.svg">
+                                </span>
+                                <span>
+                                    <img src="/image/visa.svg">
+                                </span>
+                            </div>
+                            <span class="text-pay-courier">Або готівкою кур'єру</span>
+                        </nav>
+                    </div>
+                    <div class="item-footer-soc">
+                        <div class="logo-footer">
+                            <img src="..//icons/logoimage.png" class="logo-footer-img">
+                        </div>
+                        <a href="/" class="polytics-link">Політика конфіденційності</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
